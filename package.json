@@ -1,0 +1,19 @@
+{
+  "name": "cw2individual",
+  "version": "1.0.0",
+  "description": "CW2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andre4343/CW2backend.git"
+  },
+  "author": "andrebarnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andre4343/CW2backend/issues"
+  },
+  "homepage": "https://github.com/andre4343/CW2backend#readme"
+}
