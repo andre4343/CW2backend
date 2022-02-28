@@ -32,11 +32,11 @@ app.use(function (req, res, next) {
 // connects to mongodb
 const {MongoClient} = require("mongodb");
 const ObjectID = require('mongodb').ObjectID;
-const uri = "mongodb+srv://AdminAndre:clinton4343@cluster0.tmmpq.mongodb.net/webstore?retryWrites=true&w=majority";
+const uri =  "mongodb+srv://AdminAndre:Clinton4343@cluster0.tmmpq.mongodb.net/andre?retryWrites=true&w=majority";
 let db;
 MongoClient.connect(uri, (err, client) => {
     if(!err){
-        db = client.db('webstore');
+        db = client.db('andre');
     }else{
         console.log(err);
     }
@@ -49,8 +49,8 @@ app.param('collectionName', (req, res, next, collectionName) => {
 });
 
 // allows to specify a collection name in the url
-app.get('/', (req, res, next) => {
-    res.send('Select a collection, e.g., /collection/messages');
+app.get('/messages', (req, res, next) => {
+    res.send('Select a collection, e.g., /collection/lesson');
 });
 
 // retrieves collection
